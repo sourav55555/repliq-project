@@ -3,7 +3,7 @@ import { Dialog, Transition } from '@headlessui/react'
 import { Fragment, useState } from 'react'
 import { ChevronLeft, CircleUserRound, Plus, PlusCircle } from 'lucide-react';
 const AddCustomer = () => {
-    let [isOpen, setIsOpen] = useState(true);
+    let [isOpen, setIsOpen] = useState(false);
 
     function closeModal() {
         setIsOpen(false)
