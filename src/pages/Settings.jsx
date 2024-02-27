@@ -3,7 +3,7 @@ import React from 'react';
 const Settings = () => {
     return (
         <div>
-            sett
+            All Settings
         </div>
     );
 };

@@ -3,7 +3,7 @@ import React from 'react';
 const Locations = () => {
     return (
         <div>
-            location
+            Location Page
         </div>
     );
 };

@@ -3,7 +3,7 @@ import React from 'react';
 const Invoice = () => {
     return (
         <div>
-            invoice
+            Welcome to invoice
         </div>
     );
 };

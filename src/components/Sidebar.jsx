@@ -8,7 +8,7 @@ const Sidebar = ({ showSidebar, setShowSidebar }) => {
         <div className={`fixed transition-all duration-300 w-full top-0 z-10 ${showSidebar ? "left-0" : "-left-[100%]"} `}>
 
             <div className='flex items-start'>
-                <div className='w-[21rem] bg-white h-screen'>
+                <div className='md:w-[21rem] w-[19rem] bg-white h-screen'>
                     <div className='bg-gray-200 px-6 py-7'>
                         <div className='font-bold text-4xl text-center mb-10'>go<span className='text-green-600'>B</span>illing</div>
                         <div>
@@ -16,6 +16,7 @@ const Sidebar = ({ showSidebar, setShowSidebar }) => {
                             <p className='text-2xl font-semibold'>Los Angeles, California</p>
                         </div>
                     </div>
+
                     <div className='text-xl text-gray-500 font-semibold'>
                         <NavLink to="/dashborad" className={`${({ isActive }) =>
                             isActive
@@ -41,8 +42,14 @@ const Sidebar = ({ showSidebar, setShowSidebar }) => {
 
                     </div>
                 </div>
-                <div className='w-[calc(100%-21rem)] bg-[#00000063] h-screen' onClick={() => setShowSidebar(false)} >
-                    <X onClick={() => setShowSidebar(false)} className='absolute font-semibold left-[22rem] top-4 cursor-pointer text-white w-8 h-8' />
+                <div
+                    className='md:w-[calc(100%-21rem)] w-[calc(100%-19rem)] bg-[#00000063] h-screen'
+                    onClick={() => setShowSidebar(false)}
+                >
+                    <X
+                        onClick={() => setShowSidebar(false)}
+                        className='absolute font-semibold left-[19rem] md:left-[22rem] top-4 cursor-pointer text-white w-8 h-8'
+                    />
                 </div>
             </div>
         </div>

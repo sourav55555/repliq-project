@@ -47,7 +47,7 @@ const AddCustomer = () => {
                                 <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-8 text-left align-middle shadow-xl transition-all">
                                     <Dialog.Title
                                         as="h3"
-                                        className="text-3xl font-medium leading-6 text-gray-900 flex justify-between items-center mb-12"
+                                        className="md:text-3xl text-xl font-medium leading-6 text-gray-900 flex justify-between items-center mb-12"
                                     >
                                         <ChevronLeft className='cursor-pointer' onClick={() => setIsOpen(false)} />
                                         Add New Customer
@@ -55,16 +55,43 @@ const AddCustomer = () => {
                                     </Dialog.Title>
                                     <div className="mt-2">
                                         <form action="" className='w-full space-y-6'>
-                                            <input className='w-full  block border-b-2 outline-none py-1' type="text" name="name" placeholder='Name' id="" />
-                                            <input className='w-full  block border-b-2 outline-none py-1' type="email" name="email" placeholder='Email' id="" />
-                                            <input className='w-full  block border-b-2 outline-none py-1' type="text" name="phone" placeholder='Phone' id="" />
-                                            <input className='w-full  block border-b-2 outline-none py-1' type="text" name="currency" placeholder='Currency' id="" />
-                                            <input className='w-full block border-b-2 outline-none py-1' type="text" name="" placeholder='TAX ID' id="" />
-                                            <button className='flex items-center gap-2 text-blue-600'> <Plus className='w-4 h-4 font-semibold' /> Add More Details</button>
+                                            <input
+                                                className='w-full  block border-b-2 outline-none py-1'
+                                                type="text"
+                                                name="name"
+                                                placeholder='Name'
+                                            />
+                                            <input
+                                                className='w-full  block border-b-2 outline-none py-1'
+                                                type="email"
+                                                name="email"
+                                                placeholder='Email'
+                                            />
+                                            <input
+                                                className='w-full  block border-b-2 outline-none py-1'
+                                                type="text"
+                                                name="phone"
+                                                placeholder='Phone'
+                                            />
+                                            <input
+                                                className='w-full  block border-b-2 outline-none py-1'
+                                                type="text"
+                                                name="currenc
+                                            y" placeholder='Currency'
+                                            />
+                                            <input
+                                                className='w-full block border-b-2 outline-none py-1'
+                                                type="text"
+                                                name=""
+                                                placeholder='TAX ID'
+                                            />
+                                            <button className='flex items-center gap-2 text-blue-600'>
+                                                <Plus className='w-4 h-4 font-semibold' />
+                                                Add More Details
+                                            </button>
                                             <button className='bg-blue-500 w-full text-xl text-white py-3'>Update</button>
                                         </form>
                                     </div>
-
 
                                 </Dialog.Panel>
                             </Transition.Child>
